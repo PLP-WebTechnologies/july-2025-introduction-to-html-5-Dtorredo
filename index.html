@@ -3,65 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A personal portfolio showcasing projects and skills in web development.">
-    <meta name="keywords" content="HTML, CSS, JavaScript, Web Development, Portfolio">
-    <title>John Doe - Web Developer Portfolio</title>
+    <title>Derrick Ng'ang'a - Portfolio</title>
+    <!-- this part is the one that increases the SEO by highlighting keywords that a web user might search -->
+    <meta name="description" content="Derrick Ng'ang'a's personal portfolio of web development projects.">
+    <meta name="keywords" content="HTML, CSS, JavaScript, React, Portfolio, Derrick Ng'ang'a">
 </head>
 <body>
 
     <header>
-        <h1>John Doe</h1>
-        <p>Aspiring Web Developer</p>
+        <figure>
+            <figcaption>Derrick Ng'ang'a, Front End Developer</figcaption>
+        </figure>
+        <h1>Derrick Ng'ang'a</h1>
+        <p>Currently a student who likes building cool stuff!</p>
     </header>
 
-    <nav>
-        <h2>Main Navigation</h2>
+
+    <!-- why I used aria-label : For Screen Reader Users since a person who is visually impaired uses a screen reader to navigate their way through a
+     website. This particular software reads the content of the page aloud. -->
+
+    <nav aria-label="Main Navigation">
         <ul>
-            <li><a href="#about">About Me</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#blog">Blog</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <main>
         <article id="about">
-            <h2>About Me</h2>
-            <p>I am a passionate developer learning to build accessible and user-friendly websites. I believe in the power of the web to connect people and ideas.</p>
-            <section>
-                <h3>My Skills</h3>
-                <ul>
-                    <li>HTML5 & Semantics</li>
-                    <li>Accessibility Best Practices</li>
-                    <li>Basic SEO</li>
-                </ul>
-            </section>
+            <header>
+                <h2>About Me</h2>
+            </header>
+            <p>I am a passionate front-end developer with a love for building intuitive and dynamic user interfaces. I enjoy bringing ideas to life in the browser and creating seamless user experiences.</p>
+            
+
+      <!-- <dl>, <dt> and <dd> tag. A dl is a  description list, used for items and their descriptions-->
+            <details>
+                <summary>View My Core Skills</summary>
+                <dl>
+                    <dt>HTML</dt>
+                    <dd>Structuring content semantically for clarity and accessibility.</dd>
+                    <dt>CSS</dt>
+                    <dd>Styling modern, responsive, and visually appealing web pages.</dd>
+                    <dt>JavaScript</dt>
+                    <dd>Building interactive and dynamic user experiences.</dd>
+                    <dt>React</dt>
+                    <dd>Developing complex single-page applications with a component-based architecture.</dd>
+                </dl>
+            </details>
         </article>
 
-        <article id="projects">
-            <h2>My Projects</h2>
-            <section>
-                <h3>Project Alpha</h3>
-                <p>A personal blog built with a focus on clean, semantic HTML.</p>
-            </section>
-            <section>
-                <h3>Project Beta</h3>
-                <p>A conceptual landing page for a local business, designed for optimal search engine visibility.</p>
-            </section>
-        </article>
+        <section id="projects">
+            <h2>Featured Project</h2>
+            <article>
+                <h3>DragTrack</h3>
+                <p>DragTrack is a simple Kanban board that allows you to drag and drop tasks between columns.</p>
+                <details>
+                    <summary>Project Details</summary>
+                    <ul>
+                        <li>React</li>
+                        <li>DnD-Kit</li>
+                        <li>TypeScript</li>
+                        <li>Tailwind CSS</li>
+                        <li>Framer-Motion</li>
+                        <li>Lucide Icons</li>
+                    </ul>
+                </details>
+            </article>
+        </section>
+
+        <section id="blog">
+            <h2>Latest Blog Read</h2>
+            <article>
+                <header>
+                    <h3>How To Increase Your Surface Area For Luck</h3>
+                </header>
+                <p>An insightful read on creating opportunities and making your own luck.</p>
+                <a href="https://usefulfictions.substack.com/p/how-to-increase-your-surface-area" target="_blank" rel="noopener noreferrer">Read more...</a>
+            </article>
+        </section>
+
+        <!-- <aside> tag
+      This is for content that is irrelevantly related to the main content, like a
+      sidebar with something like "Related Links"-->
 
         <aside>
-            <h2>Related Links</h2>
+            <h2>Further Reading & Resources</h2>
             <ul>
-                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN Web Docs - HTML</a></li>
-                <li><a href="https://www.w3.org/WAI/fundamentals/accessibility-intro/" target="_blank">W3C Accessibility Intro</a></li>
+                <li><a href="https://www.youtube.com/watch?v=SPwPpsXpZfg" target="_blank" rel="noopener noreferrer">How to actually get a job</a></li>
+                <li><a href="https://react.dev/" target="_blank" rel="noopener noreferrer">Official React Documentation</a></li>
             </ul>
         </aside>
     </main>
 
     <footer id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:john.doe@example.com">john.doe@example.com</a></p>
-        <p>&copy; 2025 John Doe. All rights reserved.</p>
+        <h2>Get in Touch</h2>
+        <address>
+            <p>Contact me at: <a href="mailto:drickykanyiri@gmail.com">drickykanyiri@gmail.com</a></p>
+        </address>
+        <p><small>&copy; <time datetime="2025">2025</time> Derrick Ng'ang'a. All rights reserved.</small></p>
     </footer>
 
 </body>
